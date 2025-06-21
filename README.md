@@ -1,12 +1,35 @@
-# React + Vite
+# 🧠 Aryan Kumar – 3D Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website!  
+This project is a modern, interactive portfolio built using **React**, **Three.js**, and **Vite**. It reflects my passion for creativity, 3D design, and frontend development.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+- ⚛️ **React** – Component-based frontend framework
+- 🎮 **Three.js** – JavaScript 3D library for rendering and animating 3D objects
+- 🧵 **React Three Fiber** – React renderer for Three.js
+- ⚡ **Vite** – Fast frontend build tool
+- 🎨 **TailwindCSS** – Utility-first CSS framework *(optional – include only if you used it)*
+
+---
+
+
+## About Me
+
+
+Hi! I’m Aryan Kumar, a 21 y/o Computer Science undergraduate who’s passionate about design, code, and building things that look and feel great.
+
+🎨 Obsessed with UI/UX and precision
+
+🧠 Always exploring creative ways to blend tech with design
+
+🔗 LinkedIn (https://www.linkedin.com/in/aryan-kumar-029abb289/)
+
+📫 Reach me at: aryank1506@gmail.com
+
+
+Still working on this
