@@ -33,3 +33,12 @@ Hi! I’m Aryan Kumar, a 21 y/o Computer Science undergraduate who’s passionat
 
 
 Still working on this
+
+
+
+
+
+##Credits
+
+3D model credits - silvercrow101
+https://sketchfab.com/3d-models/space-boi-f6a8c6a6727b4f2cb020c8b50bb2ee60
