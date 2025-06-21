@@ -1,4 +1,4 @@
-# 🧠 Aryan Kumar – 3D Portfolio Website
+# 🧠 Aryan Kumar – Portfolio Website
 
 Welcome to my personal portfolio website!  
 This project is a modern, interactive portfolio built using **React**, **Three.js**, and **Vite**. It reflects my passion for creativity, 3D design, and frontend development.
