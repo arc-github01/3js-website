@@ -13,7 +13,7 @@ This project is a modern, interactive portfolio built using **React**, **Three.j
 - 🎮 **Three.js** – JavaScript 3D library for rendering and animating 3D objects
 - 🧵 **React Three Fiber** – React renderer for Three.js
 - ⚡ **Vite** – Fast frontend build tool
-- 🎨 **TailwindCSS** – Utility-first CSS framework *(optional – include only if you used it)*
+
 
 ---
 
