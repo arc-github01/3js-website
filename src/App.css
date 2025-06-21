@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;700&display=swap');
+
+body, #root, .geist-root {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  font-family: 'Geist Mono', 'Fira Mono', 'Menlo', 'Consolas', monospace;
+  color: #f5f5f6;
+  box-sizing: border-box;
+}
+
+.geist-root {
+  display: flex;
+  min-height: 100vh;
+  background: #000000;
+}
+
+.geist-sidebar {
+  width: 60px;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+}
+
+.sidebar-title {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: #bbb;
+  margin: 16px 0 0 0;
+  margin-bottom: 18px;
+}
+
+.sidebar-line {
+  flex: 1 1 auto;
+  width: 1px;
+  background: #888;
+  margin: 0;
+  align-self: center;
+}
+
+.sidebar-year {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 0.8rem;
+  color: #888;
+  letter-spacing: 0.1em;
+  margin: 0 0 16px 0;
+  margin-top: 18px;
+}
+
+.geist-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 150vh;
+  margin-left: 60px;
+  padding-left: 0;
+}
+
+.geist-navbar {
+  position: fixed;
+  top: 0;
+  left: 60px;
+  right: 0;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  width: auto;
+  padding: 20px 0 20px 48px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.geist-navbar ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0 0 0 48px;
+  padding: 0;
+}
+
+.geist-navbar li {
+  font-size: 1.08rem;
+  color: #f5f5f6;
+  cursor: pointer;
+  transition: color 0.2s;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.geist-navbar li.active {
+  color: #f5a623;
+  font-weight: 700;
+}
+
+.geist-navbar li:hover:not(.active) {
+  color: #f5a623;
+}
+
+.geist-hero {
+  margin-top: 150px;
+  padding-top: 0px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 0 45px;
+  left: 37px;
+  margin-bottom: 0 !important;
+  padding-bottom: 200px;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  margin-top: -50px;
+  margin-left: 0;
+  position: relative;
+}
+
+.hero-left h1 {
+  font-size: 7.2rem;
+  font-weight: 400;
+  margin: 0 0 12px 0;
+  line-height: 0.95;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+
+.subtitle {
+  padding-top: 21px;
+  font-size: 1.5rem;
+  color: #e0e0e0;
+  margin: 0 0 32px 4px;
+}
+
+.scroll-down {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.3s ease-in-out, color 0.2s ease;
+  color: #f5a623;
+  font-size: 1.1rem;
+  position: absolute;
+  left: 0px;
+  top: 450px;
+  letter-spacing: 0.01em;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  z-index: 10;
+}
+
+.scroll-down:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.scroll-down:hover {
+  color: #c7861c; /* Darker orange on hover */
+}
+
+.scroll-down span {
+  font-size: 1.2em;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  min-width: 0;
+  margin-left: -300px;
+}
+
+.hero-3d-canvas {
+  width: 1000px;
+  height: 500px;
+  background: transparent;
+  border-radius: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 0;
+  margin-left: 200px;
+}
+
+.geist-about {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 45px;
+  perspective: 600px;
+}
+
+.about-left {
+  flex: 1.2;
+  padding-right: 0px;
+  padding-left: 40px;
+  max-width: 500px;
+  color: #bbbbbb;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  position: relative;
+  height: 450px;
+}
+
+.about-right {
+  flex: 0.8;
+  text-align: right;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+.about-right h2 {
+  font-size: 7.2rem;
+  font-weight: 400;
+  line-height: 0.95;
+  color: #fff;
+  margin-top: 0; /* Ensure no extra margin pushes it down */
+  margin-left: 0;
+  transform: translateZ(40px);
+  z-index: 10;
+  top: -100px;
+  position: relative;
+}
+
+.about-left p {
+  margin-top: 150px;
+}
+
+@media (max-width: 1100px) {
+  .geist-main {
+    margin-left: 0;
+  }
+  .geist-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 0 0 10px;
+  }
+  .hero-left {
+    margin-top: 0;
+  }
+  .hero-right {
+    justify-content: center;
+    width: 100%;
+    margin-top: 32px;
+    margin-left: 0;
+  }
+  .hero-3d-canvas {
+    width: 400px;
+    height: 440px;
+    justify-content: center;
+  }
+  .scroll-down {
+    position: static;
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 700px) {
+  .geist-root {
+    flex-direction: column;
+  }
+  .geist-sidebar {
+    position: static;
+    width: 100%;
+    height: 40px;
+    border-right: none;
+    border-bottom: 1px solid #222;
+    padding: 0 16px;
+    background: #000;
+    overflow: visible;
+    margin-left: 0;
+  }
+  .sidebar-content {
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+  }
+  .sidebar-title, .sidebar-year {
+    writing-mode: initial;
+    transform: none;
+    font-size: 0.9rem;
+    margin: 0 12px 0 0;
+  }
+  .sidebar-line {
+    width: 80px;
+    height: 1px;
+    margin: 0 12px 0 0;
+    flex: none;
+  }
+  .geist-main {
+    padding: 0;
+    margin-left: 0;
+  }
+  .geist-navbar ul {
+    gap: 18px;
+    margin-left: 12px;
+  }
+  .geist-hero {
+    padding: 0 0 0 12px;
+    margin-top: 18px;
+  }
+  .hero-left h1 {
+    font-size: 2.5rem;
+  }
+  .hero-3d-canvas {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+.hero-img {
+  display: none;
+}
+
+.scroll-down-about {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.3s ease-in-out, color 0.2s ease;
+  color: #f5a623;
+  font-size: 1.1rem;
+  position: absolute;
+  right: 45px;
+  bottom: 20px;
+  letter-spacing: 0.01em;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  z-index: 10;
+}
+
+.scroll-down-about:hover {
+  color: #c7861c;
+}
+
+.scroll-down-about:focus {
+  outline: none;
+}
+
+.scroll-down-about span {
+  font-size: 1.2em;
+}
+
+.geist-projects {
+  padding: 100px 45px;
+  min-height: 100vh;
+}
+
+.geist-projects h2 {
+  font-size: 4rem;
+  color: #fff;
+}
