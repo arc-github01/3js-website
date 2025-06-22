@@ -38,7 +38,7 @@ Still working on this
 
 
 
-##Credits
+## Credits
 
 3D model credits - silvercrow101
 https://sketchfab.com/3d-models/space-boi-f6a8c6a6727b4f2cb020c8b50bb2ee60
